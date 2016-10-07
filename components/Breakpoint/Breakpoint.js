@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import cx from 'classnames';
 
 // Styles
-import './Breakpoints.css';
+import './Breakpoints.scss';
 
 const Breakpoint = ({ mobile, children }) => (
   <div

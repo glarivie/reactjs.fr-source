@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Spring } from 'react-motion'
 import range from 'lodash/range'
 
 const Demo = React.createClass({
@@ -45,30 +44,7 @@ const Demo = React.createClass({
 
   render () {
     return (
-      <Spring endValue={this.getValues}>
-        {({ val }) =>
-          <div
-            style={{
-              height: 400,
-            }}
-            className="demo1"
-            onMouseMove={this.handleMouseMove}
-            onTouchMove={this.handleTouchMove}
-          >
-              {val.map(([x, y], i) =>
-                <div
-                  key={i}
-                  className={`demo1-ball ball-${i}`}
-                  style={{
-                    WebkitTransform: `translate3d(${x - 25}px, ${y - 25}px, 0)`,
-                    transform: `translate3d(${x - 25}px, ${y - 25}px, 0)`,
-                    zIndex: val.length - i,
-                  }}
-                />
-              )}
-          </div>
-        }
-      </Spring>
+      <h1>DEMO.jsx</h1>
     )
   },
 })

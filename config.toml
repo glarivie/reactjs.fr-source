@@ -1,6 +1,4 @@
 siteTitle="Reactjs.fr"
-baseColor = "#e5bb31"
-linkPrefix = "/gatsby-starter-documentation"
 docPages = [
   "/docs/",
   "/docs/getting-started/",

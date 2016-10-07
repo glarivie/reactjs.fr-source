@@ -6,8 +6,6 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import _ from 'lodash';
 
-import { rhythm } from 'utils/typography';
-
 import 'css/Docs.scss';
 
 class Docs extends Component {
@@ -39,7 +37,6 @@ class Docs extends Component {
     const docPages = childPages.map(({ path, title }, index) => (
       <li
         key={index}
-        style={{ marginBottom: rhythm(1/2) }}
         className="list"
       >
         <Link to={prefixLink(path)}>
@@ -51,22 +48,12 @@ class Docs extends Component {
     return (
       <div>
         <Breakpoint mobile>
-          <nav
-            style={{
-              paddingRight: `calc(${rhythm(1/2)} - 1px)`,
-              width: `calc(${rhythm(8)} - 1px)`,
-            }}
-          >
-            <ul style={{ marginTop: rhythm(1/2) }}>
+          <nav>
+            <ul>
               {docPages}
             </ul>
           </nav>
-          <div
-            style={{
-              padding: `0 ${rhythm(1)}`,
-              paddingLeft: `calc(${rhythm(8)} + ${rhythm(1)})`,
-            }}
-          >
+          <div>
             {children}
           </div>
         </Breakpoint>
