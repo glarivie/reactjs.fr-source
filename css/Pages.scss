@@ -1,11 +1,13 @@
 .container {
   max-width: 960px;
   padding-top: 0;
+
+  .link {
+    text-decoration: none;
+  }
 }
 
-.link {
-  text-decoration: none;
-}
+
 
 .span > a {
   float: right;

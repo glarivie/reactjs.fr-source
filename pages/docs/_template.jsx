@@ -8,7 +8,7 @@ import _ from 'lodash';
 
 import { rhythm } from 'utils/typography';
 
-import 'css/Docs.css';
+import 'css/Docs.scss';
 
 class Docs extends Component {
   static contextTypes = {
