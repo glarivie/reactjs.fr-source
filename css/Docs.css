@@ -1,0 +1,14 @@
+nav {
+  overflow-y: auto;
+  position: absolute;
+  border-right: 1px solid lightgrey;
+}
+
+nav > ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.list > a {
+  text-decoration: none;
+}
