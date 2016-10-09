@@ -1,0 +1,112 @@
+$baseColor: #e5bb31;
+$ctaColor: #ff5622;
+$ctaHover: #e64e1f;
+
+.opaque-nav {
+  background: $baseColor;
+  filter: none;
+}
+
+.navigation {
+  padding: 0 calc(9% + 15px);
+  position: absolute;
+  z-index: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 94px;
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+
+  .home-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+
+    img {
+      height: 58px;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: #FFF;
+      font-weight: 100;
+      text-decoration: none;
+      margin-left: 20px;
+
+      strong {
+        font-weight: 700 !important;
+      }
+
+      span {
+        color: rgba(255, 255, 255, .2);
+      }
+    }
+  }
+
+  .home-nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+
+    .home-get-started {
+      padding: 10px 30px;
+      -webkit-transition: background-color .2s ease-in-out;
+      transition: background-color .2s ease-in-out;
+      background-color: $ctaColor;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid transparent;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $ctaHover;
+      }
+    }
+
+    .home-nav-link {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 500;
+      margin-right: 40px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

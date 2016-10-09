@@ -1,0 +1,37 @@
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 4% 9%;
+
+  img {
+    max-width: 244px;
+  }
+
+  .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+    flex-basis: 42%;
+
+    h4 {
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 1.2;
+      word-spacing: 0;
+      font-size: 28px;
+      margin: 0 0 5px 0;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+}

@@ -11,13 +11,12 @@ const Html = ({ body }) => (
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
       <title>{DocumentTitle.rewind()}</title>
       {process.env.NODE_ENV === 'production' ? (
         <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
-        ) : (
-        <style dangerouslySetInnerHTML={{ __html: require('css/index.scss') }} />
-      )}
+      ) : false}
+      <link rel="icon" type="image/png" href="./assets/favicon.png" />
     </head>
     <body>
       <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />

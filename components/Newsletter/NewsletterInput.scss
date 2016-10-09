@@ -1,0 +1,57 @@
+.newsletter-input {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;;
+  width: 98%;
+
+  input {
+    background: #fbfbfb;
+    border-radius: 6px;
+    border: 2px solid #dbdbdb;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.5;
+    padding: 10px 20px;
+    position: relative;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    flex-basis: 75%;
+    outline: none;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    padding: 12px 30px;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    margin-left: 10px;
+    outline: none;
+  }
+}

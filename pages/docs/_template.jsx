@@ -6,7 +6,7 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import _ from 'lodash';
 
-import 'css/Docs.scss';
+// import 'css/Docs.scss';
 
 class Docs extends Component {
   static contextTypes = {
