@@ -16,6 +16,7 @@ const Html = ({ body }) => (
       {process.env.NODE_ENV === 'production' ? (
         <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
       ) : false}
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
       <link rel="icon" type="image/png" href="./assets/favicon.png" />
     </head>
     <body>

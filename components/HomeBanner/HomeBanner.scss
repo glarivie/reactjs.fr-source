@@ -1,0 +1,86 @@
+$linkColor: #e5bb31;
+
+header {
+  padding: 11% 9% 2% 9%;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: 0 7%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+  .categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .i-am-expert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .expert-react {
+      width: 71px;
+      height: 71px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 8px solid #FFF;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+      margin-right: 10px;
+    }
+
+    p {
+      background-color: #FFF;
+      border-radius: 12px;
+      padding: 10px 20px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+      font-weight: 300;
+      font-size: 14px;
+      margin: 0;
+
+      a {
+        color: $linkColor;
+        font-weight: 500 !important;
+        text-decoration: none;
+        -webkit-transition: color .2s ease-out;
+        transition: color .2s ease-out;
+
+        &:hover {
+          color: darken($linkColor, 20%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

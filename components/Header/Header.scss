@@ -4,10 +4,13 @@ $ctaHover: #e64e1f;
 
 .opaque-nav {
   background: $baseColor;
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
-.navigation {
+nav {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 0 calc(9% + 15px);
   position: absolute;
   z-index: 8;
@@ -16,13 +19,13 @@ $ctaHover: #e64e1f;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   top: 0;
   left: 0;
   right: 0;
@@ -37,16 +40,16 @@ $ctaHover: #e64e1f;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 
     img {
       height: 58px;
@@ -74,14 +77,14 @@ $ctaHover: #e64e1f;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
 
     .home-get-started {
       padding: 10px 30px;

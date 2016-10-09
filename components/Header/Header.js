@@ -21,7 +21,7 @@ class Header extends Component {
     const { links, pathname } = this.props;
 
     return (
-      <nav className="navigation">
+      <nav>
         <div className="home-logo">
           <img src={reactLogo} role="presentation" alt="logo-reactjs.fr" />
           <h2>REACT<strong>JS</strong><span>.fr</span></h2>

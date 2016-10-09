@@ -1,8 +1,17 @@
 $baseColor: #e5bb31;
 
 body {
-  // font-family: "Open Sans",Arial,Helvetica,sans-serif;
+  /* font-family: "Open Sans",Arial,Helvetica,sans-serif;*/
   font-family: 'Roboto', sans-serif;
   color: #313d38;
   line-height: 1.5;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  height: 100%;
 }
