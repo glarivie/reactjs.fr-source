@@ -1,7 +1,7 @@
 {
   "name": "reactjs-fr",
   "description": "Reactjs.fr website source code",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "author": "Guillaume L. <glarivie@student.42.fr>",
   "repository": {
     "type": "git",
@@ -12,9 +12,21 @@
     "gatsby": "^0.12.6",
     "lodash": "^4.15.0",
     "react": "15.3.2",
-    "react-document-title": "^2.0.1",
     "react-fontawesome": "1.2.0",
-    "react-router": "2.8.1"
+    "react-router": "2.8.1",
+    "toml-js": "0.0.8",
+    "highlight.js": "^9.6.0",
+    "history": "^2.0.2",
+    "js-yaml": "^3.6.0",
+    "markdown-it": "^7.0.1",
+    "markdown-it-abbr": "^1.0.3",
+    "markdown-it-attrs": "^0.6.3",
+    "markdown-it-deflist": "^2.0.1",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "object-assign": "^4.1.0",
+    "react-helmet": "^3.1.0",
+    "front-matter": "^2.0.7"
   },
   "devDependencies": {
     "babel-eslint": "6.1.2",
@@ -22,7 +34,11 @@
     "eslint-config-airbnb": "12.0.0",
     "eslint-plugin-import": "1.16.0",
     "eslint-plugin-jsx-a11y": "2.2.2",
-    "eslint-plugin-react": "6.3.0"
+    "eslint-plugin-react": "6.3.0",
+    "gh-pages": "^0.11.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "1.0.14"
   },
   "keywords": [
     "gatsby",
