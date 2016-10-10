@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import DocumentTitle from 'react-document-title';
+import Helmet from 'react-helmet';
 
 import { prefixLink } from 'gatsby-helpers';
 
@@ -12,7 +12,8 @@ const Html = ({ body }) => (
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
-      <title>{DocumentTitle.rewind()}</title>
+      {Helmet.rewind().title.toComponent()}
+      {Helmet.rewind().meta.toComponent()}
       {process.env.NODE_ENV === 'production' ? (
         <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
       ) : false}
@@ -25,8 +26,6 @@ const Html = ({ body }) => (
     </body>
   </html>
 );
-
-Html.displayName = 'HTML';
 
 Html.propTypes = {
   body: PropTypes.string.isRequired,
