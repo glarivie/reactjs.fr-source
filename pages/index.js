@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
 // Import styles
-import 'css/index.scss';
+import 'css/index.module.scss';
 
 // Component
 import HomeBanner from 'components/HomeBanner';

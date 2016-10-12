@@ -3,14 +3,14 @@ import React, { PropTypes } from 'react';
 import { config } from 'config';
 
 // Import styles
-import 'css/index.scss';
+import styles from 'css/index.module.scss';
 
 // Component
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 const PagesLayout = ({ children, location: { pathname } }) => (
-  <div className="home">
+  <div className={styles.home}>
     <Header links={config.nav} pathname={pathname} />
     {pathname === '/' ? children : (
       <main role="main">

@@ -4,7 +4,7 @@ import cx from 'classnames';
 import _ from 'lodash';
 
 // Styles
-import './Header.scss';
+import styles from './Header.module.scss';
 
 // Svg icons
 import reactLogo from './react.svg';
@@ -22,14 +22,14 @@ class Header extends Component {
 
     return (
       <nav>
-        <div className="home-logo">
+        <div className={styles.homeLogo}>
           <img src={reactLogo} role="presentation" alt="logo-reactjs.fr" />
           <h2>REACT<strong>JS</strong><span>.fr</span></h2>
         </div>
-        <div className="home-nav-right">
+        <div className={styles.homeNavRight}>
           <Link
             to="/javascript/"
-            className={cx('home-get-started', 'home-nav-link')}
+            className={cx(styles.homeGetStarted, styles.homeNavLink)}
           >
             Démarrer
           </Link>
@@ -37,7 +37,7 @@ class Header extends Component {
             <Link
               to={`/${link}/`}
               key={index}
-              className="home-nav-link"
+              className={styles.homeNavLink}
             >
               {_.capitalize(link)}
             </Link>

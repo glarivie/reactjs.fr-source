@@ -7,19 +7,19 @@ import _ from 'lodash';
 import NewsletterInput from 'components/Newsletter/NewsletterInput';
 
 // Styles
-import './Footer.scss';
+import styles from './Footer.module.scss';
 
 // Svg icons
 import reactLogo from './react.svg';
 
 const Footer = ({ footerNav }) => (
   <footer>
-    <div className="footer-top">
-      <div className="top-left">
-        <div className="menu">
+    <div className={styles.footerTop}>
+      <div className={styles.topLeft}>
+        <div className={styles.menu}>
           <Link
             to="/javascript/"
-            className="footer-nav-link"
+            className={styles.footerNavLink}
           >
             Démarrer
           </Link>
@@ -27,28 +27,28 @@ const Footer = ({ footerNav }) => (
             <Link
               to={`/${link.replace(' ', '-').replace('é', 'e')}/`}
               key={index}
-              className="footer-nav-link"
+              className={styles.footerNavLink}
             >
               {_.capitalize(link)}
             </Link>
           ))}
         </div>
-        <div className="social">
+        <div className={styles.social}>
           <a href="" rel="noopener noreferrer">
-            <FontAwesome name="twitter" className="icon" />
+            <FontAwesome name="twitter" className={styles.icon} />
             <span>Twitter</span>
           </a>
         </div>
       </div>
-      <div className="top-right">
-        <div className="megaphone">
+      <div className={styles.topRight}>
+        <div className={styles.megaphone}>
           <img src="./assets/megaphone.png" role="presentation" alt="megaphone-react" />
-          <div className="text">
+          <div className={styles.text}>
             <h3>Les dernières nouveautés dans votre boite mail</h3>
             <p>Inscrivez-vous maintenant à la newsletter pour ne rien manquer !</p>
           </div>
         </div>
-        <div className="input">
+        <div className={styles.input}>
           <NewsletterInput
             placeholder="Adresse e-mail"
             buttonColor="#ff5622"
@@ -57,9 +57,9 @@ const Footer = ({ footerNav }) => (
         </div>
       </div>
     </div>
-    <div className="footer-down">
+    <div className={styles.footerDown}>
       <p>Copyright &copy; 2016 - Reactjs.fr - Tous droits réservés</p>
-      <div className="home-logo">
+      <div className={styles.homeLogo}>
         <img src={reactLogo} role="presentation" alt="logo-reactjs.fr" />
         <h2>REACT<strong>JS</strong><span>.fr</span></h2>
       </div>

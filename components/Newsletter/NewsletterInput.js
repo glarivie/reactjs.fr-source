@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 
 // Styles
-import './NewsletterInput.scss';
+import styles from './NewsletterInput.module.scss';
 
 class NewsletterInput extends Component {
   static propTypes = {
@@ -21,7 +21,7 @@ class NewsletterInput extends Component {
     const { emailInput } = this.state;
 
     return (
-      <form className="newsletter-input">
+      <form className={styles.newsletterInput}>
         <input
           onChange={this.handleChange}
           value={emailInput}

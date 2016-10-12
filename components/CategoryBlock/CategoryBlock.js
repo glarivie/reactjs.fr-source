@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 
 // Styles
-import './CategoryBlock.scss';
+import styles from './CategoryBlock.module.scss';
 
 const CategoryBlock = ({ icon, title, description }) => (
-  <section className="category-block">
-    <div className="cat-blk-img" style={{ backgroundImage: `url('${icon}')` }} />
+  <section className={styles.categoryBlock}>
+    <div className={styles.catImgBlk} style={{ backgroundImage: `url('${icon}')` }} />
     <h1>{title}</h1>
     <p>{description}</p>
   </section>

@@ -5,11 +5,11 @@ import { Link } from 'react-router';
 import CategoryBlock from 'components/CategoryBlock';
 
 // Styles
-import './HomeBanner.scss';
+import styles from './HomeBanner.module.scss';
 
 const HomeBanner = ({ blockInfos }) => (
   <header style={{ backgroundImage: 'url(\'./assets/spaceship-night.jpg\')' }}>
-    <div className="categories">
+    <div className={styles.categories}>
       {blockInfos.map((el, index) => (
         <CategoryBlock
           key={index}
@@ -20,9 +20,9 @@ const HomeBanner = ({ blockInfos }) => (
         />
       ))}
     </div>
-    <div className="i-am-expert">
+    <div className={styles.iAmExpert}>
       <div
-        className="expert-react"
+        className={styles.expertReact}
         style={{ backgroundImage: 'url(\'./assets/img-console.svg\')' }}
       />
       <p>Utilisateurs avancés et/ou expert en JavaScript, <Link to="/react/">suivez ce lien</Link>.</p>
