@@ -3,13 +3,17 @@
   flex-direction: row;
   flex-grow: 1;
   flex-shrink: 0;
-  padding-top: 94px;
+  padding-top: calc(94px + 40px);
+  padding-right: calc(9% + 15px);
+  padding-bottom: 10px;
+  padding-left: calc(9% + 15px);
 
   .menu {
     flex-basis: 25%;
   }
 
   .content {
-    flex-grow: 1;
+    flex-basis: 55%;
+    padding-left: 40px;
   }
 }
