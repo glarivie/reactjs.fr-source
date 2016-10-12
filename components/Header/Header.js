@@ -21,7 +21,7 @@ class Header extends Component {
     const { links, pathname } = this.props;
 
     return (
-      <nav>
+      <nav className={cx({ [styles.opaqueNav]: pathname !== '/' })}>
         <div className={styles.homeLogo}>
           <img src={reactLogo} role="presentation" alt="logo-reactjs.fr" />
           <h2>REACT<strong>JS</strong><span>.fr</span></h2>

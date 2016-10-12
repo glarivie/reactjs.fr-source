@@ -1,0 +1,23 @@
+@import 'css/variables.module.scss';
+
+.categoryNav {
+  display: flex;
+  flex-direction: column;
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    .navList {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: $fontColor;
+      }
+    }
+  }
+}

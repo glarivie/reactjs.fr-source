@@ -1,0 +1,15 @@
+.categoryLayout {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 94px;
+
+  .menu {
+    flex-basis: 25%;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+}
