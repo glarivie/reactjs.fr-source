@@ -26,7 +26,7 @@ const HomePage = () => (
       ]}
     />
     <HomeBanner blockInfos={config.bannerBlk} />
-    <Newsletter image={prefixLink('/assets/rocket-mail.png')} />
+    <Newsletter image="./assets/rocket-mail.png" />
   </main>
 );
 

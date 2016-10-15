@@ -42,7 +42,7 @@ const Footer = ({ footerNav }) => (
       </div>
       <div className={styles.topRight}>
         <div className={styles.megaphone}>
-          <img src="/assets/megaphone.png" role="presentation" alt="megaphone-react" />
+          <img src="./assets/megaphone.png" role="presentation" alt="megaphone-react" />
           <div className={styles.text}>
             <h3>Les dernières nouveautés dans votre boite mail</h3>
             <p>Inscrivez-vous maintenant à la newsletter pour ne rien manquer !</p>

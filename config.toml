@@ -1,5 +1,7 @@
 siteTitle="Reactjs.fr"
 
+linkPrefix = "/"
+
 nav = [
   "javascript",
   "react",

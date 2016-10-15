@@ -4,27 +4,23 @@ const menu = [
     children: [
       {
         title: 'Introduction',
-        url: 'introduction-es5.html',
+        url: 'introduction-es5/',
       },
       {
-        title: 'Types',
-        url: 'types.html',
-      },
-      {
-        title: 'Variables',
-        url: 'variables.html',
+        title: 'Types et variables',
+        url: 'types-variables/',
       },
       {
         title: 'Boucles et conditions',
-        url: 'boucles-conditions.html',
+        url: 'boucles-conditions/',
       },
       {
         title: 'Gestion des erreurs',
-        url: 'gestion-erreurs-try-catch.html',
+        url: 'gestion-erreurs-try-catch/',
       },
       {
         title: 'Fonctions',
-        url: 'fonctions-es5.html',
+        url: 'fonctions-es5/',
       },
     ],
   },
@@ -33,60 +29,60 @@ const menu = [
     children: [
       {
         title: 'Introduction',
-        url: 'introduction-es6-es2015.html',
+        url: 'introduction-es6-es2015/',
       },
       {
         title: 'Let, Const',
-        url: 'variables-let-const.html',
+        url: 'variables-let-const/',
       },
       {
-        title: 'Chaines de caracteres',
-        url: 'chaines-caracteres.html',
+        title: 'Chaines de caractères',
+        url: 'chaines-caracteres/',
       },
       {
-        title: 'Fonctions flechees',
-        url: 'boucles-conditions.html',
+        title: 'Fonctions fléchées',
+        url: 'boucles-conditions/',
       },
       {
         title: 'Classes',
-        url: 'classes.html',
+        url: 'classes/',
       },
       {
-        title: 'Destructuration',
-        url: 'destructuration.html',
+        title: 'Déstructuration',
+        url: 'destructuration/',
       },
       {
         title: 'Rest, spread...',
-        url: 'rest-spread-es6.html',
+        url: 'rest-spread-es6/',
       },
       {
         title: 'Boucles for-of',
-        url: 'boucles-for-of.html',
+        url: 'boucles-for-of/',
       },
       {
         title: 'Async / Await',
-        url: 'async-await.html',
+        url: 'async-await/',
       },
       {
         title: 'Import, export',
-        url: 'modules-import-export.html',
+        url: 'modules-import-export/',
       },
     ],
   },
   {
-    name: 'L\'ecosysteme JavaScript',
+    name: 'L\'écosystème JavaScript',
     children: [
       {
         title: 'Node package manager',
-        url: 'npm.html',
+        url: 'npm/',
       },
       {
         title: 'Babel',
-        url: 'babel-js.html',
+        url: 'babel-js/',
       },
       {
         title: 'Lodash',
-        url: 'lodash.html',
+        url: 'lodash/',
       },
     ],
   },

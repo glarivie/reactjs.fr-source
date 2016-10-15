@@ -3,6 +3,7 @@
   background-color: #FEEFB3;
   padding: 18px;
 }
+
 .warning:before {
   content:'\26A0';
   margin-right: 9px;
@@ -14,14 +15,14 @@
 
 .hljs-comment,
 .hljs-quote {
-  color: #998;
+  color: #888;
   font-style: italic;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: #333;
+  color: #e467de;
   font-weight: bold;
 }
 
@@ -30,12 +31,12 @@
 .hljs-variable,
 .hljs-template-variable,
 .hljs-tag .hljs-attr {
-  color: #008080;
+  color: #ffa834;
 }
 
 .hljs-string,
 .hljs-doctag {
-  color: #d14;
+  color: #4dc514;
 }
 
 .hljs-title,
@@ -51,7 +52,7 @@
 
 .hljs-type,
 .hljs-class .hljs-title {
-  color: #458;
+  color: #e467de;
   font-weight: bold;
 }
 
@@ -60,6 +61,10 @@
 .hljs-attribute {
   color: #000080;
   font-weight: normal;
+}
+
+.hljs-attr {
+  color: #75b2e6;
 }
 
 .hljs-regexp,
@@ -74,7 +79,7 @@
 
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #0086b3;
+  color: #ffd800;
 }
 
 .hljs-meta {
@@ -96,4 +101,72 @@
 
 .hljs-strong {
   font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 500;
+}
+
+pre {
+  margin-bottom: 20px;
+  background-color: #333;
+  border-radius: 4px;
+  color: #FFF;
+  padding: 4px 10px;
+  font-family: "Source Code Pro","Monaco","Consolas","Courier New",monospace;
+}
+
+kbd {
+  background: none;
+  border-radius: 4px;
+  border: 1px solid #e5bb31;
+  display: inline-block;
+  font-family: "Source Code Pro","Monaco","Consolas","Courier New",monospace;
+  padding-left: 0.5ch;
+  padding-right: 0.5ch;
+  font-family: inherit;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+}
+
+a {
+  background: 0;
+  border: 0;
+  color: #e5bb31;
+  display: inline;
+  font-weight: 500;
+  line-height: inherit;
+  padding: 0;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #b7941f;
 }
