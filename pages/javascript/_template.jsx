@@ -1,7 +1,4 @@
 import React, { PropTypes } from 'react';
-// import { prefixLink } from 'gatsby-helpers';
-// import { config } from 'config';
-// Import styles
 import styles from 'css/Category.module.scss';
 
 // Component

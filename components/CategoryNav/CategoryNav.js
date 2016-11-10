@@ -15,6 +15,7 @@ const CategoryNav = ({ data, pathname }) => (
             <Link
               key={index}
               to={`/${pathname.split('/')[1]}/${url}`}
+              className={pathname === `/${pathname.split('/')[1]}/${url}` && styles.active}
             >
               {title}
             </Link>

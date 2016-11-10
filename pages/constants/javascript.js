@@ -41,7 +41,7 @@ const menu = [
       },
       {
         title: 'Fonctions fléchées',
-        url: 'boucles-conditions/',
+        url: 'arrow-functions/',
       },
       {
         title: 'Classes',
@@ -67,10 +67,14 @@ const menu = [
         title: 'Import, export',
         url: 'modules-import-export/',
       },
+      {
+        title: 'Programmation fonctionnelle',
+        url: 'programmation-fonctionnelle/',
+      },
     ],
   },
   {
-    name: 'L\'écosystème JavaScript',
+    name: 'L\' écosystème JavaScript',
     children: [
       {
         title: 'Node package manager',

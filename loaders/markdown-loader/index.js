@@ -21,7 +21,7 @@ var highlight = function (str, lang) {
 
 var md = markdownIt({
   html: true,
-  linkify: true,
+  linkify: false,
   typographer: true,
   highlight,
 })
