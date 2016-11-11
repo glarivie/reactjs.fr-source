@@ -34,7 +34,7 @@ const Footer = ({ footerNav }) => (
           ))}
         </div>
         <div className={styles.social}>
-          <a href="" rel="noopener noreferrer">
+          <a href="https://twitter.com/reactjs_fr" rel="noopener noreferrer">
             <FontAwesome name="twitter" className={styles.icon} />
             <span>Twitter</span>
           </a>

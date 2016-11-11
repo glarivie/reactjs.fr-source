@@ -35,39 +35,55 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
 
   .homeLogo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
 
-    img {
-      height: 58px;
-    }
+    a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
 
-    h2 {
-      font-size: 25px;
-      color: #FFF;
-      font-weight: 100;
-      text-decoration: none;
-      margin-left: 20px;
+      &:hover {
+        cursor: pointer;
 
-      strong {
-        font-weight: 700 !important;
+        img {
+          -webkit-animation: rotate 5s infinite linear;
+                  animation: rotate 5s infinite linear;
+        }
+
+        h2 {
+          font-weight: 400;
+        }
       }
 
-      span {
-        color: rgba(255, 255, 255, .5);
+      img {
+        height: 58px;
+      }
+
+      h2 {
+        font-size: 25px;
+        color: #FFF;
+        font-weight: 300;
+        text-decoration: none;
+        margin-left: 20px;
+
+        strong {
+          font-weight: 900 !important;
+        }
+
+        span {
+          color: rgba(255, 255, 255, .5);
+        }
       }
     }
   }
@@ -93,11 +109,12 @@ nav {
       background-color: $ctaColor;
       border-radius: 4px;
       text-align: center;
-      border: 1px solid transparent;
+      border: 1px solid transparent !important;
 
       &:hover {
         cursor: pointer;
         background-color: $ctaHover;
+        border-bottom: 1px solid transparent !important;
       }
     }
 
@@ -106,10 +123,29 @@ nav {
       color: #FFF;
       font-weight: 500;
       margin-right: 40px;
+      border-bottom: 2px solid transparent;
+      position: relative;
+      top: 2px;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #FFF;
+      }
 
       &:last-of-type {
         margin-right: 0;
       }
     }
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }

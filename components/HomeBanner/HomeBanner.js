@@ -16,7 +16,7 @@ const HomeBanner = ({ blockInfos }) => (
           title={el[0]}
           description={el[1]}
           icon={el[2]}
-          disabled={el[3] === 'true'}
+          url={el[3]}
         />
       ))}
     </div>

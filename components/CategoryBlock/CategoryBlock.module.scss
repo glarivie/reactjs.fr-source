@@ -1,6 +1,7 @@
 .categoryBlock {
   box-sizing: border-box;
   margin: 0 15px;
+  color: #444;
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
   position: relative;
@@ -23,6 +24,18 @@
   background-color: #FFF;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+  -webkit-transition: background-color .4s ease-out;
+  transition: background-color .4s ease-out;
+
+  &:hover {
+    color: #444;
+    background-color: #FFFEEE;
+    cursor: pointer;
+
+    .catImgBlk {
+      border: 8px solid #FFFEEE;
+    }
+  }
 
   h1 {
     font-weight: 300;
@@ -56,5 +69,7 @@
     width: 72px;
     height: 72px;
     background-color: #343434;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
   }
 }

@@ -23,16 +23,20 @@ class Header extends Component {
     return (
       <nav className={cx({ [styles.opaqueNav]: pathname !== '/' })}>
         <div className={styles.homeLogo}>
-          <img src={reactLogo} role="presentation" alt="logo-reactjs.fr" />
-          <h2>REACT<strong>JS</strong><span>.fr</span></h2>
+          <Link to="/">
+            <img src={reactLogo} role="presentation" alt="logo-reactjs.fr" />
+            <h2>REACT<strong>JS</strong><span>.fr</span></h2>
+          </Link>
         </div>
         <div className={styles.homeNavRight}>
-          <Link
-            to="/javascript/"
-            className={cx(styles.homeGetStarted, styles.homeNavLink)}
-          >
-            Démarrer
-          </Link>
+          {pathname === '/' && (
+            <Link
+              to="/javascript/"
+              className={cx(styles.homeGetStarted, styles.homeNavLink)}
+            >
+              Démarrer
+            </Link>
+          )}
           {links.map((link, index) => (
             <Link
               to={`/${link}/`}

@@ -21,24 +21,24 @@ bannerBlk = [
     "JavaScript",
     "Découvrez les bases de la programmation web avec JavaScript et apprennez comment utiliser la dernière norme en vigueur ES6 (ES2015).",
     "./assets/js.jpg",
-    "true",
+    "/javascript/",
   ],
   [
     "React",
     "Appréhendez pas à pas React, la célèbre librairie JavaScript de Facebook en créant  des composants JSX réutilisables et performants.",
     "./assets/react.svg",
-    "true",
+    "/react/",
   ],
   [
     "Webpack",
     "Mettez le nez dans les fichiers de Webpack pour apprendre à configurer en profondeur vos applications JavaScript et React.",
     "./assets/webpack.gif",
-    "true",
+    "/webpack/",
   ],
   [
     "Redux",
     "Passez à la vitesse supérieure avec React en ajoutant des fonctionnalités essentielles à la construction d'applications volumineuses.",
     "./assets/redux.png",
-    "true",
+    "/redux/",
   ],
 ]
