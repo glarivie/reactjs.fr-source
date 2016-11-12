@@ -17,6 +17,16 @@
   .content {
     flex-basis: 55%;
     padding-left: 40px;
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  .categoryLayout {
+
+    .content {
+      width: 58vw;
+    }
   }
 }
 

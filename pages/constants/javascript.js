@@ -4,7 +4,7 @@ const menu = [
     children: [
       {
         title: 'Introduction',
-        url: 'introduction-es5/',
+        url: '',
       },
       {
         title: 'Types et variables',
@@ -27,10 +27,6 @@ const menu = [
   {
     name: 'Le JavaScript ES6+',
     children: [
-      {
-        title: 'Introduction',
-        url: 'introduction-es6-es2015/',
-      },
       {
         title: 'Let, Const',
         url: 'variables-let-const/',
