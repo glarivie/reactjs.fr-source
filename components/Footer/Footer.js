@@ -24,8 +24,13 @@ const Footer = ({ footerNav }) => (
             Démarrer
           </Link>
           {footerNav.map((link, index) => (
+            // <Link
+            //   to={`/${link.replace(' ', '-').replace('é', 'e')}/`}
+            //   key={index}
+            //   className={styles.footerNavLink}
+            // >
             <Link
-              to={`/${link.replace(' ', '-').replace('é', 'e')}/`}
+              to="/"
               key={index}
               className={styles.footerNavLink}
             >
