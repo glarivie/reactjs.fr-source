@@ -1,3 +1,5 @@
+@import 'css/variables.module.scss';
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,6 +229,22 @@ footer {
           color: rgba(255, 255, 255, .2);
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  footer {
+    .footerTop {
+      display: none;
+    }
+
+    .footerDown {
+      padding: 20px 9%;
+      text-align: center;
+
+      .homeLogo { display: none; }
+      p { font-size: 0.71em; }
     }
   }
 }

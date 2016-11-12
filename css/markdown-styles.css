@@ -139,8 +139,9 @@ pre {
   margin-bottom: 20px;
   background-color: #333;
   border-radius: 4px;
+  overflow-x: auto;
   color: #FFF;
-      padding: 8px 15px;
+  padding: 8px 15px;
   font-family: "Source Code Pro","Monaco","Consolas","Courier New",monospace;
 }
 

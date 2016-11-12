@@ -51,3 +51,7 @@
     }
   }
 }
+
+@media screen and (max-width: $break-small) {
+  .categoryNav { display: none; }
+}

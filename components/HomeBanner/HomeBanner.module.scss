@@ -1,5 +1,7 @@
 $linkColor: #e5bb31;
 
+@import 'css/variables.module.scss';
+
 header {
   padding: 11% 9% 2% 9%;
   width: 100%;
@@ -80,6 +82,27 @@ header {
           color: darken($linkColor, 20%);
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  header {
+    padding: 29% 8% 10% 8%;
+    background-position: center;
+    background-size: cover;
+
+    .categories {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .iAmExpert {
+      .expertReact {
+        display: none;
       }
     }
   }

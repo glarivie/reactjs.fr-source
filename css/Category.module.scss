@@ -1,3 +1,5 @@
+@import 'css/variables.module.scss';
+
 .categoryLayout {
   display: flex;
   flex-direction: row;
@@ -15,5 +17,22 @@
   .content {
     flex-basis: 55%;
     padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .categoryLayout {
+    padding: 9%;
+    padding-top: calc(9% + 64px);
+    flex-basis: 100%;
+    flex-grow: 1;
+    width: 100%;
+
+    .content {
+      padding: 0;
+      flex-basis: 100%;
+      flex-grow: 1;
+      width: 100%;
+    }
   }
 }

@@ -1,3 +1,5 @@
+@import 'css/variables.module.scss';
+
 .newsletterInput {
   margin-top: 20px;
   display: -webkit-box;
@@ -29,7 +31,7 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
+    flex-basis: 75%;
     outline: none;
   }
 
@@ -54,5 +56,21 @@
     transition: 0.2s ease-in-out;
     margin-left: 10px;
     outline: none;
+  }
+}
+
+
+@media screen and (max-width: $break-small) {
+  .newsletterInput {
+    width: 100%;
+    flex-direction: column;
+
+    input, button {
+      flex-grow: 1;
+      flex-basis: 100%;
+      width: 100%;
+      margin: 5px 0;
+      text-align: center;
+    }
   }
 }

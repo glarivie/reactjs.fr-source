@@ -41,7 +41,10 @@ class Header extends Component {
             <Link
               to={`/${link}/`}
               key={index}
-              className={styles.homeNavLink}
+              className={cx({
+                [styles.homeNavLink]: true,
+                [styles.hideWebPack]: link === 'webpack',
+              })}
             >
               {_.capitalize(link)}
             </Link>

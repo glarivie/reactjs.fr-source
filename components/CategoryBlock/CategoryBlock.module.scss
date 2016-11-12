@@ -1,3 +1,6 @@
+$break-small: 415px;
+$break-large: 1024px;
+
 .categoryBlock {
   box-sizing: border-box;
   margin: 0 15px;
@@ -71,5 +74,17 @@
     background-color: #343434;
     -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .categoryBlock {
+    flex-basis: 100%;
+    margin: 0 0 45px 0;
+    padding: 40px 20px 20px 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
