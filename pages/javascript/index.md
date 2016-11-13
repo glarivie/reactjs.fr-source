@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: JavaScript
 ---
 
 **Le JavaScript est un langage qui permet de faire vraiment beaucoup de choses, notament grace à son écosystème grandissant et son énorme communauté d'adèptes**

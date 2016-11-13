@@ -1,3 +1,7 @@
 import javascript from './javascript';
+import react from './react';
 
-export default { javascript };
+export default {
+  javascript,
+  react,
+};
