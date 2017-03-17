@@ -5,9 +5,9 @@ import { Link } from 'react-router';
 import styles from './CategoryNav.module.scss';
 
 // Component
-const CategoryNav = ({ data, pathname }) => (
+const CategoryNav = ({ data = [], pathname }) => (
   <div className={styles.categoryNav}>
-    {data.map(({ name, children }) => (
+    {data.map(({ name, children = [] }) => (
       <section key={name}>
         <h3>{name}</h3>
         <div className={styles.navList}>
@@ -27,7 +27,7 @@ const CategoryNav = ({ data, pathname }) => (
 );
 
 CategoryNav.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.array,
   pathname: PropTypes.string.isRequired,
 };
 
